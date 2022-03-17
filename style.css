@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+:root {
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --redish: #460b0b;
+    --coral: #ff5f5f;
+    --pinkish: #ffafaf;
+    --blue: #23158c;
+    --blueish: #0b1e46;
+}
+
+html {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    color: var(--pink);
+}
+
+p{
+    color: var(--redish);
+    font-weight: 900;
+}
+
+s{
+    color: var(--darkest);
+}
+
+#root {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: var(--coral);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.header__text {
+    height: 100%;
+    text-align: center;
+    z-index: 2;
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}
+
+form {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+[type="text"],
+button {
+    display: inline-block;
+    -webkit-appearance: none;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--blueish);
+    background-color: var(--blue);
+    border-radius: 1.5rem;
+
+}
+
+button {
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin: 0 0.2rem;
+    background-color: crimson;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+    font-size: 1.25rem;
+    font-weight: 1000;
+}
+
+[type="text"] {
+    width: 100%;
+}
+
+[type="text"]:active,
+[type="text"]:focus {
+    outline: 0;
+    border: 2px solid var(--redish);
+}
+
+[type="checkbox"] {
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+h1 {
+    color: var(--redish);
+    height: 30%;
+    margin-top: 3.5rem;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: var(--blue);
+    border-radius: 1.5rem;
+}
+
+li span {
+    display: inline-block;
+    padding: .5rem;
+    width: 50rem;
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+
+li span:hover {
+    background: transparent;
+    border: 2px solid var(--blueish);
+}
+
+li span:focus {
+    outline: 0;
+    border: 2px solid var(--blueish);
+    /*border-radius: 50rem;*/
+    background: transparent;
+}
+
+.header__donuts {
+    width: 100%;
+    bottom: 160px;
+    right: 130px;
+    position: relative;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.imgs {
+    animation-name: float;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin: 0 auto;
+    width: 300px;
+    height: 336px;
+    background: url("https://i.pinimg.com/564x/8d/ef/0f/8def0f9cf7e6b00c12fca62b25994a94.jpg") center 100%/100% no-repeat;
+}
+.imgs:nth-child(1) {
+    animation-delay: 0.12s;
+}
+.imgs:nth-child(2) {
+    animation-delay: 0.24s;
+}
+.imgs:nth-child(3) {
+    animation-delay: 0.36s;
+}
+.imgs:nth-child(4) {
+    animation-delay: 0.48s;
+}
+.imgs:nth-child(5) {
+    animation-delay: 0.6s;
+}
+.imgs:nth-child(6) {
+    animation-delay: 0.72s;
+}
+.imgs:nth-child(7) {
+    animation-delay: 0.84s;
+}
+.imgs:nth-child(8) {
+    animation-delay: 0.96s;
+}
+.imgs:nth-child(9) {
+    animation-delay: 1.08s;
+}
+.imgs:nth-child(10) {
+    animation-delay: 1.2s;
+}
+.imgs:nth-child(11) {
+    animation-delay: 1.32s;
+}
+.imgs:nth-child(12) {
+    animation-delay: 1.44s;
+}
+.donut--pink {
+    animation-duration: 4s;
+    background: url("https://image.ibb.co/fgK2wm/donut2.png") center 100%/100% no-repeat;
+}
+@-moz-keyframes float {
+    0% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 50px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+@-webkit-keyframes float {
+    0% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 50px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+@-o-keyframes float {
+    0% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 50px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+@keyframes float {
+    0% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 50px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
+
+
