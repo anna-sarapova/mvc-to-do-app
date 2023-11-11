@@ -25,6 +25,45 @@ html {
     color: var(--pink);
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce the base font size for better readability on smaller screens */
+    }
+    h1 {
+        font-size: 3.5rem; /* Adjust the font size for tablets */
+    }
+    /* Adjust the form input and button */
+    form input[type="text"],
+    button {
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Modify the layout for smaller screens */
+    li span {
+        width: 100%; /* Make the text span take the full width on smaller screens */
+    }
+}
+
+/* Styles for screens up to 480px wide (mobile phones) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Further reduce the base font size for smaller screens */
+    }
+    h1 {
+        font-size: 2.5rem; /* Adjust the font size for mobile phones */
+    }
+    /* Adjust the form input and button */
+    form input[type="text"],
+    button {
+        padding: 0.3rem 0.6rem;
+    }
+
+    /* Modify the layout for smaller screens */
+    li span {
+        width: 100%; /* Make the text span take the full width on smaller screens */
+    }
+}
+
 p{
     color: var(--redish);
     font-weight: 900;
@@ -42,6 +81,8 @@ s{
 
 body {
     margin: 0;
+    font-size: 16px;
+
 }
 
 .header {

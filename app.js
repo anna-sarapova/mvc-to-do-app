@@ -258,6 +258,8 @@ class Controller {
     }
 
 }
+
+// check if service workers are supported by the web browser
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("service_worker.js"). then(registration => {
         console.log("SW Registered!");

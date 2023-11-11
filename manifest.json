@@ -2,6 +2,10 @@
   "short_name": "Not To DO PWA",
   "name": "Not To DO App",
   "description": "This is a Not To Do app in PWA",
+  "start_url": ".",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "theme_color": "#009578",
   "icons": [
     {
       "src": "icons/icon-36x36.png",
@@ -59,9 +63,6 @@
       "sizes": "512x512",
       "form_factor": "narrow"
     }
-  ],
-  "start_url": ".",
-  "background_color": "#FFFFFF",
-  "display": "standalone",
-  "theme_color": "#009578"
+  ]
+
 }
