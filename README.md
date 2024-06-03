@@ -1,3 +1,16 @@
+##Start
+
+###run locally, but it requires a nginx image on Docker or locally
+http-server
+
+### Build the Docker image
+docker build -t my-todo-app .
+
+### Run the Docker container
+docker run -d -p 8080:8080 my-todo-app
+
+
+
 ## Story
 
 Imagine, you're a frontend developer from Melbourne, Australia. You and your company Sleep2nigth Pty Ltd are working on a brand new product - To-not-do lists!
