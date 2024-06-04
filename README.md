@@ -1,14 +1,19 @@
-##Start
+## Start
 
-###run locally, but it requires a nginx image on Docker or locally
+## Lab-1:
+### Run locally, but it requires a nginx image on Docker or locally
 http-server
 
+## Lab-2:
 ### Build the Docker image
 docker build -t my-todo-app .
 
 ### Run the Docker container
 docker run -d -p 8080:8080 my-todo-app
 
+## Lab-3:
+### Run the app in the kubernetes
+kubectl apply -f kubernetes.yaml
 
 
 ## Story
