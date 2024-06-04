@@ -15,6 +15,7 @@ steps:
       '--region', 'europe-west1',
       '--platform', 'managed',
       '--allow-unauthenticated',
+      '--service-account', 'my-todo-app@stellar-verve-425415-g1.iam.gserviceaccount.com'
       '--port', '8080'
     ]
 
