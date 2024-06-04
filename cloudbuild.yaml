@@ -5,7 +5,7 @@ steps:
 
   # Step 2: Push the Docker image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$PROJECT_ID']
+    args: ['push', 'gcr.io/$PROJECT_ID/my-todo-app']
 
   # Step 3: Deploy the Docker image to Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud'
