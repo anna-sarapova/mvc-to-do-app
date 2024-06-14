@@ -15,6 +15,8 @@ docker run -d -p 8080:8080 my-todo-app
 ### Run the app in the kubernetes
 kubectl apply -f kubernetes.yaml
 
+## Lab-4:
+### Configure everything on Google Cloud
 
 ## Story
 
